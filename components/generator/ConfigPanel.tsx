@@ -7,6 +7,7 @@ import { Palette, Layers, Image as ImageIcon, CheckCircle2, FileText } from 'luc
 import { Slider } from '@/components/ui/slider';
 import { Switch } from '@/components/ui/switch';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { cn } from '@/lib/utils';
 
 interface ConfigPanelProps {
   config: QRConfig;
@@ -240,5 +241,3 @@ export default function ConfigPanel({ config, setConfig }: ConfigPanelProps) {
     </div>
   );
 }
-
-import { cn } from '@/lib/utils';
